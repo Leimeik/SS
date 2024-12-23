@@ -17,7 +17,7 @@ def do_login():
     username = request.form['username']
     password = request.form['password']
 
-    if username == 'Admin' and password == '123456':
+    if username == '2264 ' and password == '123456':
         return redirect(url_for('map_page'))
     else:
         flash('账号或密码错误')
