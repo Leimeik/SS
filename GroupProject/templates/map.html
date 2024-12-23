@@ -48,7 +48,7 @@
         /* 景点搜索框自动完成建议下拉框 */
         .suggestions-list {
             position: absolute;
-            top: 90%; /* 将下拉框定位到搜索框的下方 */
+            top: 100%; /* 将下拉框定位到搜索框的下方 */
             left: 0;
             background-color: white;
             border: 1px solid #ccc;
@@ -458,7 +458,7 @@
                 li.textContent = name;
                 li.addEventListener('click', function () {
                     searchBox.value = name;
-                    search(name); // 触发搜索功能
+                    (name); // 触发搜索功能
                     suggestionsList.style.display = 'none'; // 隐藏下拉框
                 });
                 suggestionsList.appendChild(li);
